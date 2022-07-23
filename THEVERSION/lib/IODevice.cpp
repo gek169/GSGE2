@@ -8,7 +8,14 @@ void IODevice::initGLFW() {
 	glfwInit();
 	glfwSetErrorCallback(error_callback);
 }
-void IODevice::initGL3W() { gl3wInit(); }
+void IODevice::initGL3W() { 
+/*gl3wInit(); */
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+    {
+        std::cout << "Failed to initialize GLAD" << std::endl;
+        exit(1);
+    }
+}
 double IODevice::getTime() { return glfwGetTime(); }
 void IODevice::setTime(double newtime) { glfwSetTime(newtime); }
 void IODevice::pollevents() { glfwPollEvents(); }

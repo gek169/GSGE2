@@ -1,8 +1,9 @@
 #ifndef PointLight_H
 #define PointLight_H
 
-#include "GL3/gl3.h"
-#include "GL3/gl3w.h"
+//#include "GL3/gl3.h"
+//#include "GL3/gl3w.h"
+#include "glad/glad.h"
 #define GLM_FORCE_RADIANS
 #include "SafeTexture.h"
 #include "camera.h"

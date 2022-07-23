@@ -24,7 +24,19 @@ void GkScene::drawShadowPipeline(int meshmask, FBO* CurrentRenderTarget, Camera*
 	}
 
 	/* Error Check code. Paste where you need it.
-	
+	
+
+
+
+
+
+
+
+
+
+
+
+
 	// communism = glGetError(); //Ensure there are no errors listed before we
 	start.
 	// if (communism != GL_NO_ERROR) //if communism has made an error (which is
@@ -188,7 +200,9 @@ void GkScene::drawPipeline(int meshmask, FBO* CurrentRenderTarget, FBO* RenderTa
 	//std::cout << "\nRight before the FBO::clearTexture that i'm investigating rn" << std::endl;
 	FBO::clearTexture(backgroundColor.x, backgroundColor.y, backgroundColor.z, backgroundColor.w);
 	/*
-	
+	
+
+
 	Skybox Render
 	customMainShaderBinds
 
@@ -1179,8 +1193,8 @@ GkScene::GkScene(unsigned int newwidth, unsigned int newheight, float approxFact
 	glEnable(GL_CULL_FACE);				 // Enable culling faces
 	glEnable(GL_DEPTH_TEST);			 // test fragment depth when rendering.
 	glCullFace(GL_BACK);				 // cull faces with clockwise winding
-	glEnable(GL_ARB_conservative_depth); // conservative depth.
-	// glEnable(GL_EXT_conservative_depth); //Also needed?
+	//glEnable(GL_ARB_conservative_depth); // conservative depth.
+	//glEnable(GL_EXT_conservative_depth); //Also needed?
 	glGetError(); // the arb conservative depth thing (I think) creates an
 				  // error, so i'm just voiding it with this...
 	// Does the FBO stuff and of course sets the width and height

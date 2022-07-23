@@ -2,8 +2,9 @@
 #define SceneAPI_H
 
 //(C) DMHSW 2018 All Rights Reserved
-#include "GL3/gl3.h"
-#include "GL3/gl3w.h"
+//#include "GL3/gl3.h"
+//#include "GL3/gl3w.h"
+#include "glad/glad.h"
 #include <GLFW/glfw3.h>
 #include <cstdlib>
 #include <iostream>
@@ -438,7 +439,19 @@ class GkScene // Gk for gek
 		   image Camera* SceneCamera = nullptr;//The SceneRender Camera pointer
 		   Camera* ScreenquadCamera = nullptr; //Unnecessary? Maybe... CubeMap*
 		   SkyBoxCubemap = nullptr; //For the skybox
-				
+				
+
+
+
+
+
+
+
+
+
+
+
+
 				std::vector<FBO*> FboArray; //vector and not normal array
 		   because reasons std::vector<FBO*> CustomFBOArray; //For render-target
 		   operations. Will be used for reflections in the future or something.

@@ -1,8 +1,9 @@
 #ifndef FBO_H
 #define FBO_H
 
-#include "GL3/gl3.h"
-#include "GL3/gl3w.h"
+
+//#include "GL3/gl3w.h"
+#include "glad/glad.h"
 #include "SafeTexture.h"
 #include <cstdlib>
 #include <string>

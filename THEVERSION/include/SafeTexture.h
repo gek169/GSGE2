@@ -1,8 +1,9 @@
 #ifndef SAFETEXTURE_H
 #define SAFETEXTURE_H
 
-#include "GL3/gl3.h"
-#include "GL3/gl3w.h"
+//#include "GL3/gl3.h"
+//#include "GL3/gl3w.h"
+#include "glad/glad.h"
 #include "texture.h"
 #include <cassert>
 #include <cstdlib>

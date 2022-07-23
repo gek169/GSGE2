@@ -96,10 +96,6 @@ void GLRenderObject::destruct() { // put a call to this in your overriding
 		glDeleteVertexArrays(GLVertexArrays.size(), &(GLVertexArrays[0]));
 		GLVertexArrays.clear();
 	}
-	if (GLTransformFeedbacks.size() > 0) {
-		glDeleteTransformFeedbacks(GLTransformFeedbacks.size(), &(GLTransformFeedbacks[0]));
-		GLTransformFeedbacks.clear();
-	}
 	if (GLShaders.size() > 0) {
 		for (size_t i = 0; i < GLShaders.size(); i++)
 			GLShaders[i].destroy();

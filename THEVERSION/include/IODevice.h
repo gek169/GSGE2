@@ -3,8 +3,9 @@
 #include <iostream>
 #include <vector>
 
-#include "GL3/gl3.h"
-#include "GL3/gl3w.h"
+//#include "GL3/gl3.h"
+//#include "GL3/gl3w.h"
+#include "glad/glad.h"
 #include <AL/al.h>
 #include <AL/alc.h>
 #include <GLFW/glfw3.h>

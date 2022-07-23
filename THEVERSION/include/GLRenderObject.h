@@ -1,8 +1,9 @@
 #ifndef GK_GLRENDEROBJECT
 #define GK_GLRENDEROBJECT
 
-#include "GL3/gl3.h"
-#include "GL3/gl3w.h"
+//#include "GL3/gl3.h"
+//#include "GL3/gl3w.h"
+#include "glad/glad.h"
 #define GLM_FORCE_RADIANS
 #define GLM_ENABLE_EXPERIMENTAL
 #include <algorithm>
@@ -56,7 +57,6 @@ class GLRenderObject {
 	std::vector<GLuint> GLSamplers;
 	std::vector<GLuint> GLFrameBuffers;
 	std::vector<GLuint> GLVertexArrays;
-	std::vector<GLuint> GLTransformFeedbacks;
 	std::vector<GLShader> GLShaders;
 	Transform myTransform;
 };
