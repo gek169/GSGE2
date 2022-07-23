@@ -2011,6 +2011,7 @@ typedef unsigned __int64 uint64_t;
 #endif
 
 #ifndef GL_EXT_timer_query
+/*Gek's Edit: fix compilation	*/
 /*typedef int64_t GLint64EXT;
 typedef uint64_t GLuint64EXT;*/
 #endif
